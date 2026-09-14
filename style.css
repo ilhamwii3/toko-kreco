@@ -199,7 +199,24 @@ a:focus-visible, button:focus-visible{
   border-bottom: 1px dashed var(--line);
 }
 .item:last-child{ border-bottom: none; }
-.item-info{ display:flex; flex-direction: column; gap: 3px; }
+.item-info{ 
+  display:flex; 
+  align-items: center; 
+  gap: 16px; 
+}
+.item-img{
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  flex-shrink: 0;
+  background-color: var(--card);
+}
+.item-details{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
 .item-name{ font-weight: 700; font-size: 16px; }
 .item-desc{ font-size: 13.5px; color: var(--cream-dim); }
 .item-buy{
@@ -278,6 +295,11 @@ a:focus-visible, button:focus-visible{
   margin: 4px 0 0;
   color: var(--cream-dim);
   font-size: 14px;
+}
+.footer-row .copyright{
+  font-size: 12.5px;
+  margin-top: 10px;
+  opacity: 0.8;
 }
 
 /* ---------- RESPONSIVE ---------- */
